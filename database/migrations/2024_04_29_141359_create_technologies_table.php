@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('technologies', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name');
+            $table->string('color', 7)->nullable();
+
             $table->timestamps();
         });
     }
